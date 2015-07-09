@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import matplotlib.pyplot as plot
 import random
 
@@ -15,7 +16,7 @@ def main():
 	r= 0.5
 	dentro = 0	
 
-	while(count < 1000):
+	while(count < 10000):
 		
 		x = random.random()- 0.5
 		y = random.random()- 0.5
@@ -28,7 +29,7 @@ def main():
 		
 		count += 1
 		
-		plot.title(r'Estimacion de $\pi$ : %f' % (4*float(dentro)/float(count)) )
+		plot.title(u'Estimación de $\pi$ : %f' % (4*float(dentro)/float(count)) )
  		plot.draw()
 
 def dentro_del_circulo(x,y,r):
